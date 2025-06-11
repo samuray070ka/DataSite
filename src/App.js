@@ -7,10 +7,13 @@ import Courses from './router/Courses';
 import Contact from './router/Contact';
 import Blog from './router/Blog';
 import About from './router/About';
+import GlobalStyle from './GlobalStyle';
+
 
 function App() {
   return (
     <div className="App">
+      <GlobalStyle />
      <Navbar/>
      <Routes>
         <Route path='/' element={<Home/>}/>
