@@ -16,8 +16,8 @@ function Home() {
           <img src={bannerImg} alt="" />
         </div>
       </div>
-      
-    </div>
+
+    </div> 
   )
 }
 
