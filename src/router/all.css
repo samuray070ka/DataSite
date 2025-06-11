@@ -8,6 +8,7 @@
     align-items: center;
     flex-wrap: wrap;
     overflow: hidden;
+    margin-bottom: 40px;
 }
 .left{
     width: 50%;
@@ -185,5 +186,132 @@
 @media screen and (max-width:315px) {
     .home{
         padding: 0 10px;
+    }
+}
+
+
+/* about */
+
+.about_container{
+    display: flex;
+    align-items: center;
+}
+.about_left{
+    width: 45%;
+    height: 100vh;
+}
+.about_right{
+    width: 55%;
+    height: 100vh;
+}
+.about_span{
+    padding: 10px;
+    background-color: #F1F1F1;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #222F5D;
+    display: flex;
+    width: 125px;
+}
+.about_h3{
+    font-size: 35px;
+    margin-top: 20px;
+    width: 85%;
+    color: #222F5D;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.about_p{
+    margin-bottom: 25px;
+    font-size: 17px;
+    color: #222F5D;
+    font-weight: 400;
+}
+.about_box{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px 25px;
+    border: 1px solid #F9A826;
+}
+.box_child{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.box_child h4{
+    margin-left: 20px;
+    font-size: 20px;
+    color: #222F5D;
+}
+.about_box p{
+    font-size: 15px;
+}
+.mb{
+    margin-top: 30px;
+}
+.about_btn{
+    width: 150px;
+    height: 50px;
+    background-color: #F9A826;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 30px;
+    outline: none;
+    transition: .2s;
+}
+.about_right{
+    display: flex;
+    justify-content: center;
+}
+.about_right img{
+    width: 70%;
+    margin-left: 20px;
+}
+.box_child span{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F9A826;
+    border-radius: 50%;
+    font-size: 20px;
+}
+@media screen and (max-width:1010px) {
+    .about_container{
+        flex-wrap: wrap;
+    }
+    .about_left, .about_right{
+        width: 100%;
+    }
+    .about_right{
+        display: none;
+    }
+}
+@media screen and (max-width:480px) {
+    .about_h3{
+        font-size: 30px;
+    }
+    .about_p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:415px) {
+    .about_h3{
+        width: 100%;
+        font-size: 25px;
+    }
+    .about_p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:360px) {
+    .home_container{
+        margin-bottom: 0px;
     }
 }
