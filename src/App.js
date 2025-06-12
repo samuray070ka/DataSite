@@ -1,6 +1,5 @@
 import './App.css';
 import {Routes, Route} from 'react-router-dom'
-import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Home from './router/Home';
 import Courses from './router/Courses';
@@ -18,7 +17,6 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/courses' element={<Courses/>}/>
       </Routes>
-      {/* <Footer/> */}
     </div>
   );
 }
