@@ -44,6 +44,108 @@ function Home() {
           <img src={aboutImg} alt="" />
         </div>
       </div>
+      <div className="div">
+      <div className="container category_container">
+        <span className='category_span'>Barcha kurslar toifalari</span>
+        <h4 className='category_h4' >Kurslar toifalari</h4>
+        <div className='category_flex'>
+          <div className="category_box">
+          <img src="https://cdn.prod.website-files.com/640064a02bd1b696137fa468/64520d1def45715a219a99fc_printing.svg" alt="" />
+          <h2 className='category_h2'>Printing</h2>
+          <p className='category_p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum recusandae placeat .</p>
+        </div>
+        <div className="category_box">
+          <img src="https://cdn.prod.website-files.com/640064a02bd1b696137fa468/64520d349767cee41c573d65_ui.svg" alt="" />
+          <h2 className='category_h2'>Design</h2>
+          <p className='category_p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum recusandae placeat .</p>
+        </div>
+        <div className="category_box">
+          <img src="https://cdn.prod.website-files.com/640064a02bd1b696137fa468/64520d42fd81da11c2dd7c51_brand.svg" alt="" />
+          <h2 className='category_h2'>UI / UX</h2>
+          <p className='category_p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum recusandae placeat .</p>
+        </div>
+        <div className="category_box">
+          <img src="https://cdn.prod.website-files.com/640064a02bd1b696137fa468/64520d42fd81da11c2dd7c51_brand.svg" alt="" />
+          <h2 className='category_h2'>Branding</h2> 
+          <p className='category_p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum recusandae placeat .</p>
+        </div>
+        </div>
+      </div>
+      </div>
+      <div className="container courses_container">
+        <span className="category_span">Eng zo'r kurslar</span>
+        <h4 className="category_h4">Bizning kurslar</h4>
+        <div className="courses_flex">
+          <div className="course_card">
+            <img src="https://cdn.prod.website-files.com/640064a02bd1b696137fa468/6405653400b83d12123afec3_2.png" alt="Figma to HubSpot CMS" />
+            <div className="course_info">
+              <span className="course_date">June 11, 2025</span>
+              <h3 className="course_title">Learn Figma to HubSpot CMS</h3>
+              <p className="course_details">Beginner to Advanced | 17 lessons | 50 lessons</p>
+              <div className="course_rating">⭐ 5.0</div>
+              <div className="course_price">$50.00 USD</div>
+              <button className="course_btn">Buy Course</button>
+            </div>
+          </div>
+          <div className="course_card">
+            <img src="https://cdn.prod.website-files.com/640064a02bd1b696137fa468/6405653400b83d12123afec3_2.png" alt="C Programming Language" />
+            <div className="course_info">
+              <span className="course_date">June 11, 2025</span>
+              <h3 className="course_title">C Programming Language Foundations</h3>
+              <p className="course_details">16 lessons | 20 lessons</p>
+              <div className="course_rating">⭐ 4.0</div>
+              <div className="course_price">$85.00 USD</div>
+              <button className="course_btn">Buy Course</button>
+            </div>
+          </div>
+          <div className="course_card">
+            <img src="https://cdn.prod.website-files.com/640064a02bd1b696137fa468/6405653400b83d12123afec3_2.png" alt="Leadership and Management" />
+            <div className="course_info">
+              <span className="course_date">June 11, 2025</span>
+              <h3 className="course_title">Leadership and Management</h3>
+              <p className="course_details">13 lessons | 30 lessons</p>
+              <div className="course_rating">⭐ 4.7</div>
+              <div className="course_price">$120.00 USD</div>
+              <button className="course_btn">Buy Course</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container contact_container">
+        <span className='contact_span'>Biz bilan bog'lanish</span>
+        <h4 className='contact_h4'>Biz bilan bog'laning. Xabaringizni <br /> kutamiz.</h4>
+        <div className='contact_flex'>
+          <div className="contact_box">
+            <img src="https://cdn.prod.website-files.com/640021754b75fb0c4b535941/6451ff1978cec9e274e0f2dc_map.svg" alt="" />
+            <p className='contact_p'>Manzil</p>
+            <h6 className='contact_h6'>Namangan shahar, chorsu davlat xizmatlari yonida</h6>
+          </div>
+          <div className="contact_box">
+            <img src="https://cdn.prod.website-files.com/640021754b75fb0c4b535941/6451ff43eebf58bb8246a3c0_phone.svg" alt="" />
+            <p className='contact_p'>Telefon</p>
+            <h6 className='contact_h6'>Markaz aperatori : +998 95 061 64 66</h6>
+          </div>
+          <div className="contact_box">
+            <img src="https://cdn.prod.website-files.com/640021754b75fb0c4b535941/6451ff63474dcd6e4fc43004_email.svg" alt="" />
+            <p className='contact_p'>Email manzil</p>
+            <h6 className='contact_h6 dn'>markelofmuhammadsodiq@gmail.com</h6>
+          </div>
+        </div>
+      </div>
+      <div className="container post_container">
+        <div className="post_left">
+          <img src="https://assets.website-files.com/640021754b75fb0c4b535941/64099727142ec4ea44a18a0e_image.png" alt="" />
+        </div>
+        <div className="post_right">
+          <span className='post_span'>Biz bilan bog'lanish</span>
+          <h1 className='post_h1'>Biz bilan bog'laning. Xabaringizni kutamiz.</h1>
+          <input className='input_text' type="text" placeholder='Ismingiz...' />
+          <input className='input_text ml' type="text" placeholder='Familyangiz...' /><br />
+          <input className='input_email' type="email" placeholder='Email...'/><br />
+          <input className='input_joy' type="text" placeholder='Qanday xabar yozmoqchisiz...'/><br />
+          <button className='post_btn'>Jo'natish</button>
+        </div>
+      </div>
     </div> 
   )
 }
