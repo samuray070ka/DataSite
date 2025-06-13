@@ -1,0 +1,49 @@
+.admin-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+
+  color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px #c1c1c1;
+}
+
+.admin-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.admin-form input,
+.admin-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 1px solid #c1c1c1;
+  outline: none;
+}
+
+.admin-form button {
+  width: 100%;
+  padding: 12px;
+  background: #d8aa02;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  outline: none;
+  transition: .2s;
+}
+
+.admin-form button:hover {
+  background: transparent;
+  color: #d8aa02;
+  border: 1px solid #d8aa02;
+}
+@media screen and (max-width:830px) {
+    .admin{
+        padding: 0 20px;
+    }
+}

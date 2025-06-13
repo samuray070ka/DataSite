@@ -26,6 +26,9 @@ function Navbar() {
           <Link className='link' to={'/about'} onClick={() => setIsOpen(false)}>
             <li className='item'>Biz haqimizda</li>
           </Link>
+          <Link className='link' to={'/blog'} onClick={() => setIsOpen(false)}>
+            <li className='item'>Blog</li>
+          </Link>
           <Link className='link' to={'/courses'} onClick={() => setIsOpen(false)}>
             <li className='item'>Kurslar</li>
           </Link>

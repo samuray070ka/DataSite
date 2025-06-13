@@ -5,6 +5,8 @@ import Home from './router/Home';
 import Courses from './router/Courses';
 import About from './router/About';
 import GlobalStyle from './GlobalStyle';
+import Blog from './router/Blog';
+import AdminBlog from './router/AdminBlog';
 
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/courses' element={<Courses/>}/>
+        <Route path='/blog' element={<Blog/>}/>
+        <Route path="/admin/blog" element={<AdminBlog/>} />
       </Routes>
     </div>
   );
