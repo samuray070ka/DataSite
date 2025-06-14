@@ -6,7 +6,7 @@ import Courses from './router/Courses';
 import About from './router/About';
 import GlobalStyle from './GlobalStyle';
 import Blog from './router/Blog';
-import AdminBlog from './router/AdminBlog';
+import Admin from './router/Admin';
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/courses' element={<Courses/>}/>
         <Route path='/blog' element={<Blog/>}/>
-        <Route path="/admin/blog" element={<AdminBlog/>} />
+        <Route path="/admin" element={<Admin/>} />
       </Routes>
     </div>
   );
