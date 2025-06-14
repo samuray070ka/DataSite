@@ -9,7 +9,6 @@ function AdminBlog() {
     videoUrl: ''
   });
 
-  const [blogs, setBlogs] = useState([]);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
