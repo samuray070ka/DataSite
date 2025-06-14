@@ -1021,12 +1021,12 @@
 
 .blog-grid {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     width: 100%;
 }
 
 .blog-card {
-    width: 100%;
+    width: 50%;
     height: 100%;
     border-radius: 15px;
     padding: 20px;
@@ -1107,5 +1107,10 @@
 @media screen and (max-width: 375px) {
     .blog-card{
         width: 80%;
+    }
+}
+@media screen and (max-width:755px) {
+    .blog-card{
+        width: 100%;
     }
 }
