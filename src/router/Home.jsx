@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className='home'>
       <div className="social-container">
-        <img className='send' onClick={() => setOpen(!open)} src='https://cdn.prod.website-files.com/640021754b75fb0c4b535941/6451ff63474dcd6e4fc43004_email.svg'/>
+        <img className='send' alt='Logo' onClick={() => setOpen(!open)} src='https://cdn.prod.website-files.com/640021754b75fb0c4b535941/6451ff63474dcd6e4fc43004_email.svg'/>
 
         <div className={`social-icons ${open ? 'show' : ''}`}>
           <a href="https://t.me/datasite_akademiyasi"  className="icon telegram"><FaTelegramPlane /></a>
