@@ -11,22 +11,23 @@ function Blog() {
       .catch(err => console.error("Xatolik:", err));
   }, []);
 
-  const getEmbedUrl = (url) => {
-    try {
-      if (url.includes('watch?v=')) {
-        return url.replace('watch?v=', 'embed/');
-      } else if (url.includes('youtu.be/')) {
-        const id = url.split('youtu.be/')[1];
-        return `https://www.youtube.com/embed/${id}`;
-      } else if (url.includes('/embed/')) {
-        return url;
-      } else {
-        return '';
-      }
-    } catch {
-      return '';
+ const getEmbedUrl = (url) => {
+  try {
+    if (url.includes('watch?v=')) {
+      return url.replace('watch?v=', 'embed/');
+    } else if (url.includes('youtu.be/')) {
+      const id = url.split('youtu.be/')[1];
+      return `https://www.youtube.com/embed/${id}`;
+    } else if (url.includes('/shorts/')) {
+      const id = url.split('/shorts/')[1];
+      return `https://www.youtube.com/embed/${id}`;
+    } else {
+      return url;
     }
-  };
+  } catch {
+    return '';
+  }
+};
 
   return (
     <div className="container blog-container">
