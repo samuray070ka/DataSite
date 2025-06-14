@@ -1,11 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './all.css'
+import { FaTelegramPlane, FaInstagram, FaYoutube } from 'react-icons/fa';
 import bannerImg from '../assets/64539e138771820ebcb7619d_hero-image.png'
 import aboutImg from '../assets/6451ef29fdafeb1d7d1c6995_1.png'
 
 function Home() {
+  const [open, setOpen] = useState(false);
   return (
-    <div className='home'>
+      <div className='home'>
+        <div className="social-container">
+        <span className='send' onClick={() => setOpen(!open)}>&#9993;</span>
+
+        <div className={`social-icons ${open ? 'show' : ''}`}>
+          <a href="https://t.me/datasite_akademiyasi" target="_blank" className="icon telegram"><FaTelegramPlane /></a>
+          <a href="https://www.instagram.com/datasite_academy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" className="icon instagram"><FaInstagram /></a>
+          <a href="https://www.youtube.com/@Datasiteacademy" target="_blank" className="icon youtube"><FaYoutube /></a>
+        </div>
+      </div>
       <div className='container home_container'>
         <div className="left">
           <p className='left_p'>Eng yaxshi <span>onlayn ta'lim</span> platformasi.</p>
