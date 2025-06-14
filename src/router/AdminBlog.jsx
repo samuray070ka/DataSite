@@ -16,7 +16,7 @@ function AdminBlog() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/blogs', formData);
+      await axios.post('https://datasite-api.onrender.com/api/blogs', formData);
       alert('Blog muvaffaqiyatli qo‘shildi!');
       setFormData({ title: '', description: '', videoUrl: '' });
     } catch (error) {
