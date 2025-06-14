@@ -3,12 +3,21 @@ import './all.css';
 
 function Blog() {
   const [blogs, setBlogs] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     fetch('https://datasite-api.onrender.com/api/blogs')
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) {
+          throw new Error("Serverdan to'g'ri javob kelmadi");
+        }
+        return res.json();
+      })
       .then(data => setBlogs(data))
-      .catch(err => console.error("Xatolik:", err));
+      .catch(err => {
+        console.error("Xatolik:", err);
+        setError("Ma'lumotlarni yuklab bo'lmadi.");
+      });
   }, []);
 
   const getEmbedUrl = (url) => {
@@ -31,30 +40,34 @@ function Blog() {
 
   return (
     <div className="container blog-container">
-      <h1 className='blog-title'>Bloglar sahifasi</h1>
-      <div className="blog-grid">
-        {blogs.map((item, index) => {
-          const embedUrl = getEmbedUrl(item.videoUrl);
+      <h1 className="blog_span">Bloglar sahifasi</h1>
 
-          return (
-            <div className="blog-card" key={index}>
-              {embedUrl && (
-                <iframe
-                  width="100%"
-                  height="300"
-                  src={embedUrl}
-                  title={item.title || "YouTube video"}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              )}
-              <h2>{item.title}</h2>
-              <p>{item.description}</p>
-            </div>
-          );
-        })}
-      </div>
+      {error ? (
+        <p className="error-text">{error}</p>
+      ) : (
+        <div className="blog-grid">
+          {blogs.map((item) => {
+            const embedUrl = getEmbedUrl(item.videoUrl);
+            return (
+              <div className="blog-card" key={item.id || item._id || item.title}>
+                {embedUrl && (
+                  <iframe
+                    width="100%"
+                    height="300"
+                    src={embedUrl}
+                    title={item.title || 'YouTube video'}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                )}
+                <h2>{item.title}</h2>
+                <p>{item.description}</p>
+              </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }
